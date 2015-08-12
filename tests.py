@@ -10,9 +10,6 @@ class TestCurrencyCalculator(unittest.TestCase):
     def setUp(self):
         self.calculator = CurrencyCalculator()
 
-    def test_currency_calculator_exist(self):
-        self.calculator = CurrencyCalculator()
-
     def test_currency_calculator_has_euro_exchange_rate(self):
         assert self.calculator.euro_exchange_rate != None, \
             "currency_calculator euro_exchange_rate is None"
